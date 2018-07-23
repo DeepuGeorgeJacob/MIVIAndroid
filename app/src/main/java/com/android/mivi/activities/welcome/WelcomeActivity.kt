@@ -15,6 +15,7 @@ class WelcomeActivity : BaseActivity() {
         setContentView(R.layout.activity_welcome)
         Handler().postDelayed({
             startActivity(Intent(this,InformationActivity::class.java))
+            finish()
         }, resources.getInteger(R.integer.activity_splash_delay).toLong())
     }
 }
